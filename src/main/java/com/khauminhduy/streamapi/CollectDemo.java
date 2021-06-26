@@ -71,7 +71,6 @@ public class CollectDemo {
 		map4.forEach((key, value) -> {
 			System.out.println(key + " | " + value);
 		});
-		
 
 	}
 
