@@ -20,6 +20,8 @@ public class InstantDemo {
 		long millis = duration.toMillis();
 		
 		System.out.println(millis);
+		
+		
 	}
 
 }
