@@ -14,11 +14,11 @@ public class ReduceDemo {
 
 		Optional<Integer> max = numbers.stream().reduce(Integer::max);
 
-		max.ifPresentOrElse(System.out::println, () -> System.out.println("Not Value"));
+		max.ifPresent(System.out::println);
 
 		Optional<Integer> min = numbers.stream().reduce(Integer::min);
 
-		min.ifPresentOrElse(System.out::println, () -> System.out.println("Not Value"));
+		min.ifPresent(System.out::println);
 
 		Optional<Integer> max2 = numbers.stream().max(Integer::max);
 		Optional<Integer> min2 = numbers.stream().min(Integer::min);
