@@ -3,7 +3,6 @@ package com.khauminhduy.javafx;
 import java.net.URL;
 import java.util.ResourceBundle;
 
-import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
@@ -30,12 +29,14 @@ public class FXMLController implements Initializable {
 
 	}
 
+	@FXML
 	public void okAction(ActionEvent event) {
 		if(!username.getText().equals("") && !password.getText().equals("")) {
 			System.out.println(username.getText() + " | " + password.getText());
 		}
 	}
 
+	@FXML
 	public void cancelAction( ) {
 		System.exit(0);
 	}
